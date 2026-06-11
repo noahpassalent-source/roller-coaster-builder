@@ -11,7 +11,7 @@ export function Ground() {
   return (
     <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, 0, 0]} receiveShadow>
       <planeGeometry args={[800, 800]} />
-      <meshStandardMaterial map={texture} />
+      <meshStandardMaterial map={texture} color="#c47a2c" />
     </mesh>
   );
 }
