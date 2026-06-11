@@ -187,12 +187,12 @@ export function Sky() {
   
   return (
     <>
-      <color attach="background" args={["#87CEEB"]} />
-      <fog attach="fog" args={["#87CEEB", 100, 400]} />
+      <color attach="background" args={["#ff9966"]} />
+      <fog attach="fog" args={["#ff9966", 100, 400]} />
       
-      <mesh position={[50, 40, -50]}>
+      <mesh position={[80, 15, -120]}>
         <sphereGeometry args={[8, 32, 32]} />
-        <meshBasicMaterial color="#FFFF88" />
+        <meshBasicMaterial color="#ffbb55" />
       </mesh>
       
       <ambientLight intensity={0.4} />
@@ -208,7 +208,7 @@ export function Sky() {
         shadow-camera-top={100}
         shadow-camera-bottom={-100}
       />
-      <hemisphereLight args={["#87CEEB", "#228B22", 0.3]} />
+      <hemisphereLight args={["#ff9966", "#cc5500", 0.3]} />
     </>
   );
 }
